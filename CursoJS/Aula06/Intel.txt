@@ -1,0 +1,36 @@
+NO TERMINAL{       duas opçoes(segunda mais facil)
+'O ' + nome + ' de idade ' + idade + ' tem ' + altura + ' cm'
+`O ${nome} de idade ${idade} tem ${altura} cm`
+
+{   n = 1545.5
+    n.toFixed(2)     aumenta os numeros apos a virgula, no caso, aumentou para 2
+    1545.50
+
+    n.toFixed(2).replace('.' , ',')     Troca o .(ponto) pela ,(virgula)
+    1545,50
+
+    n.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL})
+    R$ 1,545.50   ou seja, retorna o valor em Reais
+
+    n.toLocaleString('pt-BR', {style: 'currency', currency: 'USD})
+    US$ 1,545.50  ou seja, Dólar
+
+    n.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR})
+    £ 1,545.50    ou seja, Euro
+
+    (obs: currency == Dinheiro)}
+}
+{
+Number.parseInt() e/ou parseInt() mudam o valor para inteiro
+Number.parseFloat() e/ou parseFloat() mudam o valor para float
+Number() o proprio JS decide para qual converter
+
+String() Converte para string
+n.toString() Tbm converte para string
+}
+
+opçoes extras{
+    s.length        Tamanho da string
+    s.toUpperCase() tudo para 'MAIÚSCULA'
+    s.toLowerCase() tudo para 'minúsculas'
+}

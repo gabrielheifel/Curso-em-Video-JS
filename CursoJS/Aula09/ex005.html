@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body{
+            background: rgb(68, 125, 199);
+            color: blanchedalmond;
+            font: normal 16pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var corpo = document.body
+        // atribui a p1 o primeiro p(p[0]) ou o segundo (p[1])
+        var p1 = document.getElementsByTagName('p')[1]
+        // printa na tela o que esta dentro de p1
+        window.document.write(p1.innerHTML)
+        // muda o background diretamente pelo DOM
+        corpo.style.background = 'green'
+        // muda a cor da atribuiçao a variavel
+        p1.style.color = 'black'
+        
+        // Pega o id(que esta na div) e altera
+        // pode trocar de id para class, name... 
+        // dps só troca o getElementBy...
+        var d = document.getElementById('msg')
+        d.style.background = 'blue'
+        d.innerText = 'Estou aguardando...'
+        
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

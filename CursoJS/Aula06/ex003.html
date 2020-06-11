@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My second Program</title>
+    <style>
+        body{
+            background-color: chocolate;
+            color: rgb(27, 211, 27);
+            font: oblique 20pt Arial;       /* Comentário em CSS */
+        }
+        h1{
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>  <!-- Comentário em HTML -->
+    <p>Ta safe!</p>
+    <script>
+        var n1 = window.prompt('Digite um numero')  //prompt retorna String
+        var n2 = window.prompt('Digite outro numero')
+
+        var soma = Number(n1) + Number(n2)
+        //Number.parseInt() e/ou parseInt() mudam o valor para inteiro
+        //Number.parseFloat() e/ou parseFloat() mudam o valor para float
+        //Number() o proprio JS decide para qual converter
+
+        //String() Converte para string
+        //n.toString() Tbm converte para string
+
+        window.alert('O resultado da soma é ' + soma)   // Concatenação
+        // (number + number) para adição
+        // (string + string) para concatenação
+    
+        window.alert(`O resultado da soma entre ${n1} e ${n2} é ${soma}`)
+
+        //      NO TERMINAL       duas opçoes(segunda mais facil)
+        // 'O ' + nome + ' de idade ' + idade + ' tem ' + altura + ' cm'
+        // `O ${nome} de idade ${idade} tem ${altura} cm`
+
+
+        
+        
+    </script>
+</body>
+</html>

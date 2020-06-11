@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whats your country?</title>
+</head>
+<body>
+    <h1>Whats your country?</h1>
+    De onde tu vem? <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Manda" onclick = clicar()>    
+    <div id = 'res'> </div>
+
+    <script>
+        function clicar(){
+            var txtpaís = document.querySelector('input#txtp')
+            var res = document.querySelector('div#res')
+            var país = txtpaís.value;
+            if(país == 'Brasil'|| país == 'brasil'){
+                res.innerHTML = 'Tu é Brasileiro!'
+            }else{
+                res.innerHTML = 'Tu é Gringo!'
+            }
+        }
+    </script>
+</body>
+</html>

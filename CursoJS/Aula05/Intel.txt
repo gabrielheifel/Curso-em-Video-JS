@@ -1,0 +1,30 @@
+Ctrl + Shift + crase = abre o terminal
+escreve nodejs e abre o Node
+testar{
+    var n = 10
+    var x = 20
+    n + x
+    typeof n
+    typeof x
+    x = 'google'
+    x
+    typeof x
+    .exit
+}
+exit no terminal para fecha-lo
+
+    crtl c para limpar a tela no nodejs
+
+Data Types JavaScript{
+
+    number
+        Infinity
+        NaN
+    string
+    boolean
+    null
+    undefined
+    object
+        Array
+    function
+}
